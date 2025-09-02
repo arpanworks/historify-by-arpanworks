@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: 
+        linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)),
+        url(assets/victoria.webp);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeIn 1s ease-in;
+}
+
+header {
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    animation: slideUp 1s ease-out;
+}
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+}
+header a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    transition: 150ms ease-in;
+}
+header a:hover {
+    background-color: #f44336;
+    border: 2px solid #f44336;
+}
+
+main {
+    padding: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in;
+}
+
+.image-container {
+    text-align: center;
+    animation: slideUp 1.2s ease-out;
+}
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.details {
+    animation: slideUp 1.4s ease-out;
+}
+.details ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+.details li {
+    padding: 0.5rem;
+    color: #ffffff;
+}
+strong {
+    color: #f44336;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
+    animation: fadeIn 1.8s ease-in;
+}
+.nav-button {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 0.7rem 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    text-align: center;
+    transition: 200ms ease-in;
+}
+.nav-button:hover {
+    background-color: #f44336;
+    border: 2px solid #f44336;
+}

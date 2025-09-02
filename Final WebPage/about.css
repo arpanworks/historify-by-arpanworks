@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-image: 
+    linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(assets/bg-2.webp);
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.about {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center; 
+}
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: slideUp 1s ease-in;
+}
+.about p {
+    font-size: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    line-height: 1.6;
+    animation: slideUp 1s ease-in;
+}
+
+
+.reviews {
+    background-image: 
+    linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(assets/bg-2.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 20px;
+    text-align: center;
+}
+.reviews h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    animation: slideUp 1s ease-in;
+}
+.review {
+    max-width: 60%;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease;
+    animation: slideUp 1s ease-in;
+}
+.review:hover {
+    transform: scale(1.03);
+}
+.review h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+.review p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
